@@ -50,7 +50,8 @@ export default class App extends React.Component {
       <View style={styles.container}>
         {isLoading ? (
           <View style={styles.loadingContainer}>
-            <Text style={styles.loadingText}>Fetching The Weather</Text>
+            <Text style={styles.loadingText}>Grabbing Your Local</Text>
+            <Text style={styles.loadingText}>Weather Conditions</Text>
           </View>
         ) : (
           <Weather weather={weatherCondition} temperature={temperature} />
@@ -63,13 +64,13 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff"
+    backgroundColor: "#298fca"
   },
   loadingContainer: {
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#FFFDE4"
+    backgroundColor: "#298fca"
   },
   loadingText: {
     fontSize: 30
